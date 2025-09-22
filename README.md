@@ -28,99 +28,110 @@ Project Guide on my Blog: - https://virendra.tech.blog/2019/01/27/my-c-projects/
 
 ---
 
+## How To Use
+
+1. Clone or download this repository.
+2. Open `ELearning.sln` in Visual Studio.
+3. Update the connection string in `Web.config` to point to your SQL Server instance.
+4. Build and run the project (F5).
+5. Register as a student or log in with existing tutor/student credentials.
+
+---
+
 ## Deployment
 
 #### A step by step guide that tells you how you can deploy this project in your system.
 
 ```
+1. Open Microsoft SQL Server and create a new database.
+2. Run the provided SQL scripts to create the `Users`, `Courses`, `Modules`, and `UserRoles` tables.
+3. Update the connection string in `ELearning/Web.config` to your database name and credentials.
+4. Open `ELearning.sln` in Visual Studio and build the solution.
+5. Press F5 to run the web application locally.
+```
 
 **List of Forms & Classes I made in this System**
 
-1.  Table Data (Students)
-2.  Table Data (Tutors)
-3.  UserLogin.aspx
-4.  Logout.aspx
-5.  StudentDetails.aspx
-6.  TutorDetails.aspx
-7.  StudentAccount.aspx
-8.  TutorAccount.aspx
-9.  StudentRegistration.aspx
-10. UpdatePassword.aspx
-11. UpdateTutorCourse.aspx
-
-```
+1. Table Data (Students)
+2. Table Data (Tutors)
+3. UserLogin.aspx
+4. Logout.aspx
+5. StudentDetails.aspx
+6. TutorDetails.aspx
+7. UserAccount.aspx
+8. StudentRegistration.aspx
+9. UpdatePassword.aspx
+10. UpdateTutorCourse.aspx
 
 **#1. Table Data (Students)**
 
 ![Table Data](https://virendratech.files.wordpress.com/2019/02/table-data-students.png)
 
-- This table above Shows the data already in this project.
-- The highlighted area shows students in the database.
+- This table above shows the student records in the database.
 
-**#2. Table Data (Tutor)**
+**#2. Table Data (Tutors)**
 
 ![Table Data](https://virendratech.files.wordpress.com/2019/02/table-data-tutor.png)
 
-- In this table, the highlighted area shows tutors in the database.
+- This table shows the tutor records in the database.
 
 **#3. UserLogin.aspx**
 
 ![User Login](https://virendratech.files.wordpress.com/2019/02/login.png)
 
-- This above login form contains student credentials.
-- In this form, the user can log in as a student or tutor.
+- This login form allows users to authenticate as a student or tutor.
 
 **#4. Logout.aspx**
 
 ![Logout](https://virendratech.files.wordpress.com/2019/02/logout-1.png)
 
-- This above logout form asks the user to they sure want to log out.
+- This page asks the user to confirm logout.
 
 **#5. StudentDetails.aspx**
 
 ![Student Details](https://virendratech.files.wordpress.com/2019/02/students-details.png)
 
-- This student details form only seen by the user who logs in as a student.
-- This form gives information about student course, tutor on the course and modules covers in the course.
+- Visible to users logged in as students.
+- Displays the student’s course, associated tutors, and course modules.
 
 **#6. TutorDetails.aspx**
 
 ![Tutor Details](https://virendratech.files.wordpress.com/2019/02/tutor-details.png)
 
-- These tutor details form only seen by the user who logs in as a tutor.
-- This form gives information of course, which course they taught and the list of students in that course.
+- Visible to users logged in as tutors.
+- Displays the tutor’s course and enrolled students.
 
-**#7. StudentAccount.aspx**
+**#7. UserAccount.aspx (Student View)**
 
 ![Student Account](https://virendratech.files.wordpress.com/2019/02/user-account.png)
 
-- This screen comes up when user login as a student.
-- If user login as a student they can see their details and update their password.
+- This page appears when a student logs in.
+- Students can view their details and update their password.
 
-**#8. TutorAccount.aspx**
+**#8. UserAccount.aspx (Tutor View)**
 
 ![Tutor Account](https://virendratech.files.wordpress.com/2019/02/tutor-account.png)
 
-- This screen comes up when user login as a tutor.
-- If user login as a tutor they can see their details, update their password and update their course as well.
+- This page appears when a tutor logs in.
+- Tutors can view their details, update their password, and change their course.
 
 **#9. StudentRegistration.aspx**
 
 ![Student Registration](https://virendratech.files.wordpress.com/2019/02/student-registration.png)
 
-- This registration form allows the user to register as a student by default as per given requirment.
+- Allows users to register as students by default.
 
 **#10. UpdatePassword.aspx**
 
 ![Update Password](https://virendratech.files.wordpress.com/2019/02/update-password.png)
 
-- This form allows the user to update their password from their database.
+- Enables users to update their password.
 
 **#11. UpdateTutorCourse.aspx**
 
 ![Update Tutor Course](https://virendratech.files.wordpress.com/2019/02/update-tutor-course.png)
 
-- This form allows the tutor to update their course directly from their account.
+- Allows tutors to change their course directly from their account.
 
 ---
 
